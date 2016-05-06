@@ -3,10 +3,22 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+        ],
+        dist: {
+          src: 'css/*.css'
+        }
+      }
+    },
     sass: {
       dist: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          require: 'susy'
         },
         files: {
           'css/main.css': 'css/main.scss'
@@ -36,6 +48,10 @@ module.exports = function(grunt) {
           "*.html",
           "js/*.js"
         ]
+      },
+      post: {
+        files: 'css/*.css',
+        tasks: ['postcss']
       }
     }
   });
@@ -43,6 +59,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-postcss');
+
 
   grunt.registerTask('default', ['sass', 'connect', 'watch']);
 

@@ -3,53 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li>
-        <a href="#">
-          <span class="sr-only">POLITICO</span>
-          <img src="/img/logo-politico.png" alt="">
-        </a>
+  <nav class="nav">
+    <a href="#">
+      <span class="nav__brand">POLITICO</span>
+      <img src="/img/logo-politico.png" alt="">
+    </a>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="#">Navigation One</a>
+      </li>
+      
+      <li class="nav__item">
+        <a class="nav__link" href="#">Navigation Two</a>
+      </li>
+      
+      <li class="nav__item">
+        <a class="nav__link" href="#">Navigation Three</a>
+      </li>
+      
+      <li class="nav__item">
+        <a class="nav__link" href="#">Navigation Four</a>
       </li>
 
-      <li><a href="#">Navigation One</a></li>
-      <li><a href="#">Navigation Two</a></li>
-      <li><a href="#">Navigation Three</a></li>
-      <li><a href="#">Navigation Four</a></li>
-      <li><a href="#">Navigation Five</a></li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Navigation Five</a>
+      </li>
     </ul>
   </nav>
 
-  <main class="container">
-    <header>
-      <h1>The stories behind NYC street names</h1>
-      <h2>History of the biggest little island in America.</h2>
-      <h3>By Debbie Smith | 04/23/16</h3>
-      <a href="#">see full image</a>
-    </header>
+  <div class="container">
+    <main>
+      <header>
+        <h1>The stories behind NYC street names</h1>
+        <h2>History of the biggest little island in America.</h2>
+        <h3>By Debbie Smith | 04/23/16</h3>
+        <a href="#">see full image</a>
+      </header>
 
-    <section>
-      <p class="lead">
-        The streets of New York City are famous around the globe. If you're a visitor, you've probably heard about them in countless books, movies and TV shows. Did you ever wonder where their names came from? Here are some iconic NYC street names and their origins.
-      </p>
+      <article>
+        <p class="lead">
+          The streets of New York City are famous around the globe. If you're a visitor, you've probably heard about them in countless books, movies and TV shows. Did you ever wonder where their names came from? Here are some iconic NYC street names and their origins.
+        </p>
 
-      <h2>Wall Street</h2>
-      <p>Along with Broadway, Wall Street is perhaps the best-known New York City thoroughfare. A synecdoche for the financial industry, the eight-block-long stretch in Lower Manhattan was originally named "de Waal Straat" by Manhattan's early Dutch settlers. The most widely accepted explanation of the name is that it's derived from the wall built by Peter Stuyvesant, the last director-general of New Amsterdam, on the Dutch colony's northernmost border to keep out rival English settlers. (Stuyvesant also lends his name to a short stretch of street in Manhattan's East Village and an avenue in Brooklyn, along with many institutions across the City.) Another theory, however, is that Wall Street may be named for the 30 Walloon families, who were among the first European settlers of the island.</p>
+        <h2>Wall Street</h2>
+        <p>Along with Broadway, Wall Street is perhaps the best-known New York City thoroughfare. A synecdoche for the financial industry, the eight-block-long stretch in Lower Manhattan was originally named "de Waal Straat" by Manhattan's early Dutch settlers. The most widely accepted explanation of the name is that it's derived from the wall built by Peter Stuyvesant, the last director-general of New Amsterdam, on the Dutch colony's northernmost border to keep out rival English settlers. (Stuyvesant also lends his name to a short stretch of street in Manhattan's East Village and an avenue in Brooklyn, along with many institutions across the City.) Another theory, however, is that Wall Street may be named for the 30 Walloon families, who were among the first European settlers of the island.</p>
 
-      <h2>Broadway</h2>
-      <p>As one of the main north-south thoroughfares in Manhattan (and its oldest), Broadway's moniker may seem self-evident. However, the name is a translation from—you guessed it—the Dutch phrase "Breedeweg," or "broad road"). Fun fact: Broadway not only runs the length of Manhattan but continues through the Bronx and even 18 miles beyond the City, ending just past Sleepy Hollow, New York.</p>
+        <h2>Broadway</h2>
+        <p>As one of the main north-south thoroughfares in Manhattan (and its oldest), Broadway's moniker may seem self-evident. However, the name is a translation from—you guessed it—the Dutch phrase "Breedeweg," or "broad road"). Fun fact: Broadway not only runs the length of Manhattan but continues through the Bronx and even 18 miles beyond the City, ending just past Sleepy Hollow, New York.</p>
 
-      <h2>Bowery</h2>
-      <p>Bowery is the English version of "bouwerij," Dutch for "farm." It connected the farmland on what was then the outskirts of the City to the Wall Street area. Until 1807 it was known as Bowery Lane, but today is simply named Bowery or the Bowery—no "street," "avenue" or "boulevard" needed, thank you very much.</p>
+        <h2>Bowery</h2>
+        <p>Bowery is the English version of "bouwerij," Dutch for "farm." It connected the farmland on what was then the outskirts of the City to the Wall Street area. Until 1807 it was known as Bowery Lane, but today is simply named Bowery or the Bowery—no "street," "avenue" or "boulevard" needed, thank you very much.</p>
 
-      <h2>Houston Street</h2>
-      <p>If you're a visitor to the City, one sure way to give yourself away as being from out of town is to pronounce this street like the name of the city in Texas. In NYC, the name is pronounced "HOW-ston" and is named for William Houstoun, a delegate from Georgia to the Continental Congress from 1784 through 1786. Wealthy landowner Nicholas Bayard III named the street; he ran it through property he owned at the time. William Houstoun was Bayard's son-in-law.</p>
+        <h2>Houston Street</h2>
+        <p>If you're a visitor to the City, one sure way to give yourself away as being from out of town is to pronounce this street like the name of the city in Texas. In NYC, the name is pronounced "HOW-ston" and is named for William Houstoun, a delegate from Georgia to the Continental Congress from 1784 through 1786. Wealthy landowner Nicholas Bayard III named the street; he ran it through property he owned at the time. William Houstoun was Bayard's son-in-law.</p>
 
-      <h2>Canal Street</h2>
-      <p>Today, Canal Street is one of Lower Manhattan's major east-west thoroughfares. It takes its name from a canal that was dug in the early 1800s to drain Collect Pond into the Hudson River. In the 1700s, Collect Pond, which was located between where City Hall and White Street are today, was a popular picnic area and wintertime skating rink. It also provided drinking water for the growing City, but by the early 19th century had become polluted. The pond was filled in 1811, and Canal Street was built along the path of the drainage system.</p>    
-      </section>
+        <h2>Canal Street</h2>
+        <p>Today, Canal Street is one of Lower Manhattan's major east-west thoroughfares. It takes its name from a canal that was dug in the early 1800s to drain Collect Pond into the Hudson River. In the 1700s, Collect Pond, which was located between where City Hall and White Street are today, was a popular picnic area and wintertime skating rink. It also provided drinking water for the growing City, but by the early 19th century had become polluted. The pond was filled in 1811, and Canal Street was built along the path of the drainage system.</p>    
+      </article>
 
       <!-- BEGIN Ad Unit -->
       <aside>
@@ -90,5 +104,60 @@
       </section>
       <!-- END Related Content -->
     </main>
-  </body>
-  </html>
+  </div><!-- .container --> 
+
+  <!-- BEGIN FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <section>
+          <h4>Alpha</h4>
+          <ul>
+            <li><a href="">Alpha one</a></li>
+            <li><a href="">Alpha two</a></li>
+            <li><a href="">Alpha three</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h4>Bravo</h4>
+          <ul>
+            <li><a href="">Bravo one</a></li>
+            <li><a href="">Bravo two</a></li>
+            <li><a href="">Bravo three</a></li>
+            <li><a href="">Bravo four</a></li>
+            <li><a href="">Bravo five</a></li>
+            <li><a href="">Bravo six</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h4>Charlie</h4>
+          <ul>
+            <li><a href="">Charlie one</a></li>
+            <li><a href="">Charlie two</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h4>Delta</h4>
+          <ul>
+            <li><a href="">Delta one</a></li>
+            <li><a href="">Delta two</a></li>
+            <li><a href="">Delta three</a></li>
+            <li><a href="">Delta four</a></li>
+          </ul>
+        </section>
+      </div>
+    </div><!-- .container --> 
+  </footer><!-- .footer --> 
+
+
+</body>
+</html>
