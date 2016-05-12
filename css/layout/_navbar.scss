@@ -5,6 +5,10 @@
   color: white;
   width: 100%;
   margin-bottom: 20px;
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    margin-bottom: 40px;
+  }  
 }
 
 // Navbar Logo
@@ -26,10 +30,7 @@
 // Menu Toggle on Mobile
 .nav-toggle {
   @include vertical-align;
-<<<<<<< HEAD
-=======
   right: 0;
->>>>>>> gh-pages
   padding: 15px;
   color: white;
 
