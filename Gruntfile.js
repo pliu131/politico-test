@@ -42,7 +42,9 @@ module.exports = function(grunt) {
       connect: {
         server: {
           options: {
-            livereload: true
+            livereload: true,
+            // to run this server using only the grunt connect command
+            keepalive: true 
           }
         }
       },
