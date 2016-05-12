@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         require('autoprefixer')({browsers: 'last 2 versions'}),
         ],
         dist: {
-          src: 'css/*.css'
+          src: 'css/main.css'
         }
       }
     },
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           width: 320,
           height: 560
         },
-        src: 'dev/index.html',
+        src: 'dev/index-dev.html',
         dest: 'dev/index-critical.html'
       }
     },
@@ -91,6 +91,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-critical');
 
-  grunt.registerTask('default', ['sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'postcss', 'critical', 'htmlmin', 'watch']);
+  grunt.registerTask('build', ['sass', 'postcss', 'critical', 'htmlmin']);
 
 };
