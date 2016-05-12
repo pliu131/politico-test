@@ -1,22 +1,93 @@
+// Navbar Styles
 .nav {
-  @extend %clearfix;
-  padding: 15px;
+  @include clearfix;
   background-color: black;
-}
-
-.nav__list {
-  @extend %list-reset;
-  float: right;
-}
-
-.nav__brand {
-  @extend %visually-hidden;  
-}
-
-.nav__link {
   color: white;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+// Navbar Logo
+.nav-header {
+  position: relative;
+  text-align: center;
+
+  &__link {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    text-align: left;
+    display: inline-block;
+  } 
+}
+
+// Menu Toggle on Mobile
+.nav-toggle {
+  @include vertical-align;
+  padding: 15px;
+  color: white;
+
+  &__icon {
+    display: inline-block;
+    margin-right: 3px;
+  }
+
+  &__icon-bar {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    
+    & + & {
+      margin-top: 3px;
+    }
+  }
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    display: none;
+  }
+}
+
+
+// List of links in the navigation bar
+.nav-list {
+  @include reset-list;
+  display: none;
+
+  &__item {
+    display: block;
+
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+
+    @include breakpoint(768px 991px) {
+      padding: 10px;
+    }
+
+    &:focus, &:active, &:hover {
+      background-color: lighten(black, 30%);
+    }
+  }
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    display: block !important;
+    text-align: center;
+  }
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    float: right;
+    padding: 5px;
+  }
 }

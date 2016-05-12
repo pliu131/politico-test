@@ -1,0 +1,76 @@
+// Font Families
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif: Georgia, serif;
+
+// Color used in button
+$blue: #1174b9;
+$primary-color: $blue;
+
+// Settings for Susy (SASS mixins for creating grid systems)
+// http://susy.oddbird.net/
+$susy: (
+  columns: 12,
+  global-box-sizing: border-box,
+  column-width: 75px,
+  gutters: 20px/75px
+);
+
+// Sass Map Containing Media Query Breakpoints
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop-small: 992px,
+  desktop-large: 1200px
+);
+
+// Maps containing font-sizes
+// These are used in the font-size mixin
+// which is located in utilities/mixins.scss
+$p-font-sizes: (
+  null: 12px,
+  mobile: 13px,
+  tablet: 14px,
+  desktop-small: 15px
+);
+
+$h1-font-sizes: (
+  null: 24px,
+  mobile: 28px,
+  tablet: 36px,
+  desktop-small: 48px
+);
+
+$h2-font-sizes: (
+  null: 18px,
+  mobile: 21px,
+  tablet: 24px,
+  desktop-small: 32px
+);
+
+$h3-font-sizes: (
+  null: 16px,
+  mobile: 18px,
+  tablet: 21px,
+  desktop-small: 24px
+);
+
+$h4-font-sizes: (
+  null: 14px,
+  mobile: 16px,
+  tablet: 16px,
+  desktop-small: 18px
+);
+
+$h5-font-sizes: (
+  null: 13px,
+  mobile: 14px,
+  tablet: 15px,
+  desktop-small: 16px
+);
+
+$h6-font-sizes: (
+  null: 12px,
+  mobile: 13px,
+  tablet: 14px,
+  desktop-small: 15px
+);

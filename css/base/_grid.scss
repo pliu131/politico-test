@@ -1,0 +1,9 @@
+// Susy mixin for setting box sizing to border-box
+@include border-box-sizing;
+
+// Container for columns using Susy's mixin
+.container {
+  @include container;
+  padding-left: 15px;
+  padding-right: 15px;
+}
