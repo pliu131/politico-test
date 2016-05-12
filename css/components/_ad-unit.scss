@@ -1,0 +1,10 @@
+.ad-unit {
+  margin: 0 auto 30px;
+  width: 300px;
+  height: 250px;
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    float: right;
+    margin: 0;
+  }
+}

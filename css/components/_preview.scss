@@ -1,0 +1,33 @@
+// Preview links to other articles
+.preview {
+  margin-bottom: 15px;
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    @include gallery(6 of 12);
+  }
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    @include gallery(3 of 12);  
+  }
+
+  .preview__link {
+    color: black;
+  }
+
+  .preview__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .preview__lead {
+    color: #333;
+    line-height: 1.45;
+  }
+
+  .preview__byline {
+    font-family: $sans-serif;
+    font-weight: 300;
+    color: #ababab;
+  }
+}

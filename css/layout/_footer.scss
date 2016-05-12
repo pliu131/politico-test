@@ -1,0 +1,40 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-section {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    @include gallery(6 of 12);
+    text-align: left;
+  }
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    @include gallery(3 of 12);  
+  }
+
+  .footer-section__title {
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 0.5em;
+  }
+
+  .footer-section__link {
+    display: block;
+    color: darken(white, 15%);
+    padding: 10px 0;
+
+    &:hover, &:active, &:focus {
+      color: darken(white, 45%);
+    }
+
+    @include breakpoint(map-get($breakpoints, desktop-small)) {
+      padding: 4px 0;
+    }
+  }
+}

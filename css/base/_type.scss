@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+}
+
+a {
+  @include font-size($p-font-sizes);
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p {
+  @include font-size($p-font-sizes);
+  font-family: Georgia;
+  margin-bottom: 1.45em;
+  line-height: 1.45;
+  margin-top: 0;
+
+  // For the lead paragraph in an article
+  .lead {
+    font-size: 1.25em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+h1, .h1 {
+  @include font-size($h1-font-sizes);
+  font-weight: bold;
+}
+
+h2, .h2 {
+  @include font-size($h2-font-sizes);
+  font-weight: normal;
+}
+
+h3, .h3 {
+  @include font-size($h3-font-sizes);
+  font-weight: normal;
+}
+
+h4, .h4 {
+  @include font-size($h4-font-sizes);
+  font-weight: bold; 
+}
+
+h5, .h5 {
+  @include font-size($h5-font-sizes);
+  font-weight: bold;
+}
+
+h6, .h6 {
+  @include font-size($h6-font-sizes);
+  font-weight: bold;
+}
+
+// Utility Classes to set font-weights
+.fw--light {
+  font-weight: 300;
+}
+
+.fw--bold {
+  font-weight: 700;
+}
+
+.fw--normal {
+  font-weight: 300;
+}
+
+// Page break for previews and main article content
+hr.page-break {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background-color: #ababab;
+}

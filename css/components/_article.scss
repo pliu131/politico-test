@@ -1,0 +1,11 @@
+.article {
+  @include clearfix;
+}
+
+.article__content {
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    // Setting a fixed margin 
+    // to allow room for the fixed ad unit
+    margin-right: 320px;
+  }
+}
