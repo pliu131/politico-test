@@ -11,8 +11,8 @@ a {
 p {
   @include font-size($p-font-sizes);
   font-family: Georgia;
-  margin-bottom: 1.45em;
-  line-height: 1.45;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
   margin-top: 0;
 
   // For the lead paragraph in an article
