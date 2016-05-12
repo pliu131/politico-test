@@ -196,8 +196,22 @@
     </div><!-- .container --> 
   </footer><!-- .footer --> 
 
-  <script async src="js/jquery-1.12.3.min.js"></script>
+  <!-- <script async src="js/jquery-1.12.3.min.js"></script> -->
   <script>
+    // Small script to make sure jQuery is loaded after the page renders
+    // https://varvy.com/pagespeed/defer-loading-javascript.html
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "js/jquery-1.12.3.min.js";
+      document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+
+    // JavaScript to toggle the image overlay and the navigation on mobile
     $(function() {
       $('.js-open-overlay').on('click', function() {
         $('.page-overlay').fadeIn();
